@@ -34,6 +34,18 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  '/coucou': {
+      controller : 'Humans',
+      action: 'nocreate'
+  },
+  '/coucou/:prenom': {
+      controller : 'Humans',
+      action: 'create'
+  },
+  '/accidents': {
+      controller : 'Humans',
+      action: 'accidents'
   }
 
   /***************************************************************************
