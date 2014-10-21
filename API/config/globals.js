@@ -9,7 +9,26 @@
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.globals.html
  */
 module.exports.globals = {
+    adapters:{
+/*       mysqldb: {
 
+        module: 'sails-mysql',
+        host: 'localhost',
+        user: 'root',
+        // Psst.. You can put your password in config/local.js instead
+        // so you don't inadvertently push it up if you're using version control
+        password: '',
+        database: 'minutebuzz'
+      }
+    },*/
+        elasticsearch: {
+            host:'localhost:9200',
+            index:'henrymb'
+        },
+        mb:{
+          baseUrl:'http://localhost:1337'
+        }
+    }
   /****************************************************************************
   *                                                                           *
   * Expose the lodash installed in Sails core as a global variable. If this   *
