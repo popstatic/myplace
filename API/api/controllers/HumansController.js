@@ -6,9 +6,7 @@
  */
 
 module.exports = {
-<<<<<<< HEAD
-	//console.log('hello world');
-=======
+
 
 	create : function (req,res) {
 		console.log("Well, hello "+req.url+'\n'+'Waiting for new connection...');
@@ -60,6 +58,5 @@ module.exports = {
 
 	},
 	_config: {}
->>>>>>> fffb6f0f023decd545fefc85134df4b7cfc025f1
 };
 
